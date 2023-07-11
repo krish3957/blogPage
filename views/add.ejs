@@ -1,0 +1,14 @@
+<%- include("header") %>
+    <div class="add-item">
+        <h2>Add a new blog</h2>
+        <div>
+            <form class="form" action="/add" method="post">
+                <label for="titleInput">Title</label>
+                <input type="text" name="titleInput" class="form-control" required autofocus>
+                <label for="contentInput">Content</label>
+                <textarea class="form-control" name="contentInput" rows="10" cols="150"  required></textarea>
+                <button type="submit" class="form-control" cursor="pointer">Submit</button>
+            </form>
+        </div>
+    </div>
+    <%- include("footer") %>
